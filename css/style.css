@@ -20,13 +20,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 30px;
     background-color: #1d2131;
-    gap: 40px;
     margin-top: 50px;  
     background-image: url('../sources/texture-bg-5.png');
-    /* background-repeat: no-repeat; */
-    /* background-size: 100%; */
-
 }
 
 main {
@@ -34,21 +31,19 @@ main {
     flex-flow: column;
     width: 85%;
     max-width: 1000px;
-    gap: 220px;
+    gap: 15vh;
     padding-bottom: 10vh;
 }
 
 .title-section {
-    font-size: 84px;
-    color: #040111;
-    opacity: 60%;
+    font-size: 48px;
+    color: #000000;
+    opacity: 50%;
     font-weight: 900;
     text-align: center;
-    letter-spacing: 5px;
     text-transform: lowercase;
 
-    margin: 0 0 -40px 0;
-    z-index: 0;
+    z-index: 1;
 }
 
 
@@ -57,6 +52,8 @@ main {
     order:1;
     padding-top: 100px;
     width: 150px;;
+    
+    z-index: 5;
 }
 
 .menu-principal {
@@ -88,6 +85,7 @@ main {
 /* --------HERO SECTION--------- */
 
 .hero {
+    margin-bottom: 7vh;
     display: flex;
     align-items: flex-end;
     height: 75vh;
@@ -180,6 +178,7 @@ main {
     position: relative;
 }
 
+/* ---------ABOUT IMAGE---------- */
 .about-information-1 {
     background-color: #5114A5;
     border-radius: 20px;
@@ -200,6 +199,7 @@ main {
     bottom: 3vh;
 }
 
+/* ---------ABOUT INFOS---------- */
 .emphase-text {
     font-size: 2rem;
     color: #8224E3;
@@ -210,7 +210,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-top: 10px;
+    padding-top: 50px;
     width: 130%;
     font-size: 1rem;
     text-align: justify;
@@ -238,55 +238,164 @@ main {
 }
 
 
-.about-age-and-experience {
+
+/* ---------TECHS SECTION---------- */
+.techs {
+    position: relative;
+}
+
+.techs-icons {
     display: flex;
-    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 60px;
 }
 
-.about-head-information-2 {
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.techs-bg{
+    width: 100%;
+    height: 20vh;
+    background-image: url("../sources/paper-texture.jpg");
+    background-color: #5114A5;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment:fixed;
+    opacity: 100%;
+
+    position: absolute;
+    top: 125px;
+    left: 0;
+
 }
 
-.about-content-information-2 {
-    font-size: 80px;
-    font-weight: 700;
-    color: #8224E3;
+.tech-icon {
+    width: 6vh;
+    height: 6vh;
+    margin-top: 10%;
+    opacity: 80%;
+
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.about-presentation {
+.icon-html {
+    background-image: url("../sources/icons/icons8-html-5.svg");
+}
+
+.icon-css {
+    background-image: url("../sources/icons/icons8-css3.svg");
+}
+
+.icon-js {
+    background-image: url("../sources/icons/icons8-javascript.svg");
+}
+
+.icon-nodejs {
+    width: 12vh;    
+    background-size: cover;
+    background-image: url("../sources/icons/icons8-nodejs.svg");
+    background-position: center;
+}
+
+.icon-ps {
+    background-image: url("../sources/icons/icons8-adobe-photoshop.svg");
+}
+
+.icon-ai {
+    background-image: url("../sources/icons/icons8-adobe-illustrator.svg");
+}
+
+.icon-figma {
+    height: 6vh;
+    background-image: url("../sources/icons/icons8-figma.svg");
+}
+
+
+
+/* ---------PORTFOLIO SECTION---------- */
+.portfolio-title {
+    margin-bottom: 3%;
+}
+
+.portfolio-itens {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 2%;
+
+}
+.portfolio-item {
+    width: 23vw;
+    height: 40vh;
+
+    border-radius: 20px;
+    background-color: #141b2e;
+    background-image: url("../sources/paper-texture-3.jpg");
+    background-blend-mode: multiply;
+    position: relative;
+    cursor: pointer;
+
 }
 
-.presentation-title {
-    font-size: 24px;
+.portfolio-bg-itens {
+    position: absolute;
+    width: 21.6vw;
+    height: 40vh;
+    border-radius: 20px;
 }
 
-.presentation-paragraph::first-letter {
-    font-size: 50px;
-    float: left;
-    line-height: 103%;
-    initial-letter: -5;
-    margin-right: 8px;
-    margin-bottom: -10px;
+.portfolio-item:hover .portfolio-bg-itens{
+    box-shadow: 0 0 30px #0b0c15;
 }
 
-.download-cv-button {
-    margin-top: 10px;
-    background-color: #8224E3;
-    height: 60px;    
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 500;
+.portfolio-item-img {
+    margin: 4px;
+    height: 65%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    opacity: 60%;
 }
 
-.fa-file-arrow-down {
-    margin-left: 10px;
+.portfolio-item-name {
+    margin: 5%;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.portfolio-item-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%
+}
+span.portfolio-item-tag {
+    padding: 0.5px 10%;
+    border-radius: 20px;
+    background-color: #5114A5;
+    font-size: 14px;
+
+    color: #fff;
 }
 
+
+
+
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #141b2e;
+    background-image: url("../sources/paper-texture-3.jpg");
+    background-blend-mode: multiply;
+    
+    position: absolute;
+    bottom: -200vh;
+}
 
 
