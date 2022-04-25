@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Analyce Ferreira - Dev & Designer</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/popup-style.css">
+   
 </head>
 <body>
-
+    <div class="popup-screen" style="visibility: hidden;">
+        <div class="popup-box popup-send-email">
+            <i class="fas fa-times close-btn"></i>
+            <h2>Email enviado com sucesso</h2>
+            <p>Muito obrigada por entrar em contato. Responderei o mais rápido possível! <br> Até mais!
+            </p>
+        </div>
+    </div>
+    
+    <div class="container-content">
         <header class="conteiner-menu-principal">
             <div class="menu-principal">
                 <div class="menu-principal-logo">
@@ -21,12 +34,9 @@
                 <nav class="menu-link">    
                     <ul class="menu-link-itens">
                         <li class="menu-link-item"><a href="#sobre">Sobre</a></li>
-                        <li class="menu-link-item"><a href="#skills">Skills</a></li>
-                        <li class="menu-link-item"><a href="#competencias">Competências</a></li>
-                        <li class="menu-link-item"><a href="#experiencias">Experiência</a></li>
+                        <li class="menu-link-item"><a href="#techs">Tecnologias</a></li>
                         <li class="menu-link-item"><a href="#portfolio">Portfólio</a></li>
-                        <li class="menu-link-item"><a href="#referencias">Referências</a></li>
-                        <li class="menu-link-item"><a href="#contato">Contato</a></li>
+                        <li class="menu-link-item"><a href="#contact">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -64,12 +74,12 @@
                         </p>
                         <div class="redes-sociais">
                             <p class="about-head-information">Social</p>
-                            <span class="redes-sociais-icons">
+                            <div class="redes-sociais-icons">
                                 <a href=""><i class="fa-brands fa-linkedin fa-lg about-content-information"></i></a>
                                 <a href="https://github.com/analyceferreira"><i class="fa-brands fa-github fa-lg about-content-information"></i></a>
                                 <a href=""><i class="fa-brands fa-facebook fa-lg about-content-information"></i></a>
                                 <a href=""><i class="fa-brands fa-instagram fa-lg about-content-information"></i></a>
-                            </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,7 +152,71 @@
 
             </section>
 
+            <section class="contact" id="contact">
+                <h3 class="title-section">Contato</h3>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p class="contact-text-quote">
+                            “Se a oportunidade não bater à sua porta, construa a porta.”<br>– Milton Berle.
+                        </p>
+                        <p>
+                            Agradeço por ter chegado até aqui, e se chegou provavelmente gostou do meu perfil!<br>
+                            Que tal conversarmos melhor?
+                        </p>
+                        <div class="contact-infos">
+                            <span><strong>Nome:</strong> Analyce Ferreira Dapont</span>
+                            <span><strong>Endereço:</strong> Sinop – MT</span>
+                            <span><strong>Telefone:</strong> <a href="">(66) 9 8411-5450</a></span>
+                            <span><strong>Email:</strong> <a href="mail:contato@analyceferreira.com.br">contato@analyceferreira.com.br</a></span>
+                        </div>
+
+                        <div class="redes-sociais-icons">
+                            <a href=""><i class="fa-brands fa-linkedin fa-lg about-content-information"></i></a>
+                            <a href="https://github.com/analyceferreira"><i class="fa-brands fa-github fa-lg about-content-information"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook fa-lg about-content-information"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram fa-lg about-content-information"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="https://formsubmit.co/contato@analyceferreira.com.br" method="POST">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact-sucess.html">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <h4 class="contact-form-title">Envie Uma Mensagem</h4>
+                        <div class="contact-form-item" >
+                            <input class="contact-input" id="contact-name" type="text" required>
+                            <label class="contact-label" for="contact-name">Nome</label>
+                        </div>
+
+                        <div class="contact-form-item">
+                            <input class="contact-input" id="contact-phone" type="text" required>
+                            <label class="contact-label" for="contact-phone">Telefone</label>
+                        </div>
+
+                        <div class="contact-form-item">
+                            <input class="contact-input" id="contact-email" type="email" required>
+                            <label class="contact-label" for="contact-email">Email</label>
+                        </div>
+
+                        <div class="contact-form-item">
+                            <textarea class="contact-input" name="contact-message" id="contact-message" required></textarea>
+                            <label class="contact-label" class="contact-label" for="contact-message">Mensagem</label>
+                        </div>
+
+                        <div class="contact-form-item contact-form-item-button">
+                         <a href=""><button type="submit">Enviar</button></a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
         </main>
-        <footer class="footer">© 2021 Analyce Ferreira Dapont</footer>
+        </div>
+        <footer class="footer">
+            <span>Desined end create by Analyce Ferreira Dapont</span> 
+            <span>©2022 All rights resevate </span>  
+        </footer>
 </body>
+
+<script src="./scrips/modal.js"></script>
 </html>

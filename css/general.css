@@ -1,0 +1,27 @@
+/* ------IMPORT FONTS------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* --------RESET DEFAULT STYLES-------- */
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    color: #d4d4d4;
+    box-sizing: border-box;
+    z-index: 2;
+    border: none;
+    outline: none;
+
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+   
+:target {
+    scroll-margin-top: 15vh;
+}
