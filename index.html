@@ -8,8 +8,7 @@
     <title>Analyce Ferreira - Dev & Designer</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/popup-style.css">
+    <link rel="stylesheet" href="./css/style.css">
    
 </head>
 <body>
@@ -22,17 +21,17 @@
         </div>
     </div>
     
-    <div class="container-content">
+    <div class="container-content" id="container-content">
         <header class="conteiner-menu-principal">
             <div class="menu-principal">
                 <div class="menu-principal-logo">
-                    <a href="#">
+                    <a href="#container-content">
                         <img class="menu-principal-image" src="sources/logo-analyce-ferreira-dapont-profissional-designer-grafico.png">
                     </a>
                 </div>
 
                 <nav class="menu-link">    
-                    <ul class="menu-link-itens">
+                    <ul class="menu-link-itens" id="menu-link-itens">
                         <li class="menu-link-item"><a href="#sobre">Sobre</a></li>
                         <li class="menu-link-item"><a href="#techs">Tecnologias</a></li>
                         <li class="menu-link-item"><a href="#portfolio">Portfólio</a></li>
@@ -44,14 +43,14 @@
 
         <main class="page-content">
             <section class="hero">
-                <section class="hero-title">
+                <div class="hero-title">
                     <h1 class="hero-h1">Analyce Ferreira</h1>
                     <h2 class="hero-h2">Gerente de negócios e inovação, designer, aspirante a programadora web fullstack, apaixonada por processos e pessoas</h2>
                     <div class="hero-scroll-down"><div class="scroll"><span></span></div></div>
-                </section>    
-                <section class="hero-image">
+                </div>    
+                <div class="hero-image">
                     <img class="hero-image-content" src="sources/9750010297.png">                
-                </section>
+                </div>
             </section>
 
             <section class="about" id="sobre">
@@ -67,7 +66,7 @@
 
                     <div class="about-information-2">
                         <p>
-                            <strong class="emphase-text">Olá,</strong> eu sou a Ana! Apaixonada por processos e pessoas. Sempre antenada a novas tendencias e technologia.                      Entende o mundo como muito dinâmico e por isso foca no desenvolvimento continuo.
+                            <strong class="emphase-text">Olá,</strong> eu sou a Ana! Apaixonada por processos e pessoas. Sempre antenada a novas tendencias e tecnologia.                      Entende o mundo como muito dinâmico e por isso foca no desenvolvimento continuo.
                         </p>
                         <p>
                             Designer gráfico e gestora de negócios há mais de 6 anos, trilhando novos caminhos como Web Fullstack. 
@@ -75,10 +74,9 @@
                         <div class="redes-sociais">
                             <p class="about-head-information">Social</p>
                             <div class="redes-sociais-icons">
-                                <a href=""><i class="fa-brands fa-linkedin fa-lg about-content-information"></i></a>
+                                <a href="https://www.linkedin.com/in/analyceferreiradapont/"><i class="fa-brands fa-linkedin fa-lg about-content-information"></i></a>
                                 <a href="https://github.com/analyceferreira"><i class="fa-brands fa-github fa-lg about-content-information"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook fa-lg about-content-information"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram fa-lg about-content-information"></i></a>
+
                             </div>
                         </div>
                     </div>
@@ -93,7 +91,7 @@
                         <div class="tech-icon icon-html"></div>
                         <div class="tech-icon icon-css"></div>
                         <div class="tech-icon icon-js"></div>
-                        <div class="tech-icon icon-nodejs"></div>
+                        <div class="tech-icon icon-nodejs" id="icon-nodejs"></div>
                         <div class="tech-icon icon-ps"></div>
                         <div class="tech-icon icon-ai"></div>
                         <div class="tech-icon icon-figma"></div>
@@ -157,7 +155,7 @@
                 <div class="contact-content">
                     <div class="contact-text">
                         <p class="contact-text-quote">
-                            “Se a oportunidade não bater à sua porta, construa a porta.”<br>– Milton Berle.
+                            “Se a oportunidade não bater à sua porta, abra a porta e a procure”<br>– Milton Berle.
                         </p>
                         <p>
                             Agradeço por ter chegado até aqui, e se chegou provavelmente gostou do meu perfil!<br>
@@ -171,15 +169,13 @@
                         </div>
 
                         <div class="redes-sociais-icons">
-                            <a href=""><i class="fa-brands fa-linkedin fa-lg about-content-information"></i></a>
+                            <a href="https://www.linkedin.com/in/analyceferreiradapont/"><i class="fa-brands fa-linkedin fa-lg about-content-information"></i></a>
                             <a href="https://github.com/analyceferreira"><i class="fa-brands fa-github fa-lg about-content-information"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook fa-lg about-content-information"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram fa-lg about-content-information"></i></a>
                         </div>
                     </div>
 
-                    <form class="contact-form" action="https://formsubmit.co/contato@analyceferreira.com.br" method="POST">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact-sucess.html">
+                    <form class="contact-form" id="contact-form" action="https://formsubmit.co/contato@analyceferreira.com.br" method="POST">
+                        <input type="hidden" name="_next" value="https://analyceferreira.github.io/site-portfolio-analyce-ferreira/#sobre">
                         <input type="hidden" name="_captcha" value="false">
 
                         <h4 class="contact-form-title">Envie Uma Mensagem</h4>
@@ -213,10 +209,13 @@
         </main>
         </div>
         <footer class="footer">
-            <span>Desined end create by Analyce Ferreira Dapont</span> 
+            <span>Desined and create by Analyce Ferreira Dapont</span> 
             <span>©2022 All rights resevate </span>  
         </footer>
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script src="./scrips/modal.js"></script>
+<script src="./scrips/smooth-scroll.js"></script>
 </html>
