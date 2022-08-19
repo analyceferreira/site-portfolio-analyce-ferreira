@@ -13,6 +13,7 @@
     background-color: #1d2131;
     
     background-image: url('../sources/texture-bg-4.png');
+    background-blend-mode: soft-light;
 }
 
 
@@ -210,7 +211,6 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-top: 50px;
     width: 130%;
     font-size: 1rem;
     text-align: justify;
